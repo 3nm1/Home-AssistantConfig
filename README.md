@@ -46,16 +46,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [commits-shield]: https://img.shields.io/github/commit-activity/y/3nm1/home-assistant-config.svg
-[commits]: https://github.com/3nm1/home-assistant-config/commits/master
-[contributors]: https://github.com/3nm1/home-assistant-config/graphs/contributors
+[commits]: https://github.com/3nm1/Home-AssistantConfig/commits/master
+[contributors]: https://github.com/3nm1/Home-AssistantConfig/graphs/contributors
 [3nm1]: https://github.com/3nm1
-[actions-shield]: https://github.com/3nm1/home-assistant-config/workflows/Home%20Assistant%20CI/badge.svg
-[actions]: https://github.com/3nm1/home-assistant-config/actions
+[actions-shield]: https://github.com/3nm1/Home-AssistantConfig/workflows/Home%20Assistant%20CI/badge.svg
+[actions]: https://github.com/3nm1/Home-AssistantConfig/actions
 [home-assistant]: https://home-assistant.io
-[issue]: https://github.com/3nm1/home-assistant-config/issues
-[license-shield]: https://img.shields.io/github/license/3nm1/home-assistant-config.svg
+[issue]: https://github.com/3nm1/Home-AssistantConfig/issues
+[license-shield]: https://img.shields.io/github/license/3nm1/Home-AssistantConfig.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
-[last-commit-shield]: https://img.shields.io/github/last-commit/3nm1/home-assistant-config.svg
-[stars-shield]: https://img.shields.io/github/stars/3nm1/home-assistant-config.svg?style=social&label=Stars
-[forks-shield]: https://img.shields.io/github/forks/3nm1/home-assistant-config.svg?style=social&label=Forks
-[watchers-shield]: https://img.shields.io/github/watchers/3nm1/home-assistant-config.svg?style=social&label=Watchers
+[last-commit-shield]: https://img.shields.io/github/last-commit/3nm1/Home-AssistantConfig.svg
+[stars-shield]: https://img.shields.io/github/stars/3nm1/Home-AssistantConfig.svg?style=social&label=Stars
+[forks-shield]: https://img.shields.io/github/forks/3nm1/Home-AssistantConfig.svg?style=social&label=Forks
+[watchers-shield]: https://img.shields.io/github/watchers/3nm1/Home-AssistantConfig.svg?style=social&label=Watchers
