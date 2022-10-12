@@ -1,11 +1,17 @@
-
-# Loads default set of integrations. Do not remove.
-default_config:
-
-# Text to speech
-tts:
-  - platform: google_translate
-
-automation: !include automations.yaml
-script: !include scripts.yaml
-scene: !include scenes.yaml
+---
+# Welcome to my Home Assistant configuration!
+#
+# Don't be scared by the size of my configuration file...
+# It is probably the smallest you've ever seen.
+#
+# My system is very modular and very differently structured
+# compared to other configurations you'll find online.
+#
+# Basically, each file in the repository does 1 (one, uno, eins)
+# thing only! Click through it, you'll get it pretty fast.
+#
+# The configuration.yaml is only used to bootstrap the system.
+#
+homeassistant:
+  # Load packages
+  packages: !include_dir_named integrations
