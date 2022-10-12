@@ -1,16 +1,4 @@
 # 3nm1's Home Assistant Configuration
-
-![Project Maintenance][maintenance-shield]
-[![License][license-shield]](LICENSE.md)
-
-[![GitHub Actions][actions-shield]][actions]
-[![GitHub Activity][commits-shield]][commits]
-[![GitHub Last Commit][last-commit-shield]][commits]
-
-![GitHub Stars][stars-shield]
-![GitHub Watchers][watchers-shield]
-![GitHub Forks][forks-shield]
-
 ## About
 
 This is my personal Home Assistant configuration, running my home automations. Primarily focused on knx and zigbee integrations as of now, will expand in the future.
@@ -44,18 +32,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-[commits-shield]: https://img.shields.io/github/commit-activity/y/3nm1/home-assistant-config.svg
-[commits]: https://github.com/3nm1/Home-AssistantConfig/commits/master
-[contributors]: https://github.com/3nm1/Home-AssistantConfig/graphs/contributors
-[3nm1]: https://github.com/3nm1
-[actions-shield]: https://github.com/3nm1/Home-AssistantConfig/workflows/Home%20Assistant%20CI/badge.svg
-[actions]: https://github.com/3nm1/Home-AssistantConfig/actions
-[home-assistant]: https://home-assistant.io
-[issue]: https://github.com/3nm1/Home-AssistantConfig/issues
-[license-shield]: https://img.shields.io/github/license/3nm1/Home-AssistantConfig.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
-[last-commit-shield]: https://img.shields.io/github/last-commit/3nm1/Home-AssistantConfig.svg
-[stars-shield]: https://img.shields.io/github/stars/3nm1/Home-AssistantConfig.svg?style=social&label=Stars
-[forks-shield]: https://img.shields.io/github/forks/3nm1/Home-AssistantConfig.svg?style=social&label=Forks
-[watchers-shield]: https://img.shields.io/github/watchers/3nm1/Home-AssistantConfig.svg?style=social&label=Watchers
