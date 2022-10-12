@@ -12,6 +12,7 @@ __pycache__
 .cloud
 .storage
 .google.token
+.ssh
 deps
 
 # Specific file ignores
