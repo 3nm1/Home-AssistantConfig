@@ -1,0 +1,50 @@
+# Generic ignores
+*.log
+*.log.*
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
+
+# Directory (contents) ignores
+.cloud
+.storage
+.google.token
+deps
+
+# Specific file ignores
+core
+image
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml
+
+# Build-in blueprints ignores
+blueprints/*/homeassistant
+
+# ESPHome ignores
+esphome/.*/
+
+# Ignore add-on files
+aircast.xml
+airsonos.xml
+notebooks
+
+# Ignore files created by IDE's
+.vscode
+.theia
+.Trash*
+
+# Ignore vendored stuff
+custom_components
+themes
+www/community
+
+# Specific keeps
+#!custom_components/telegram_bot_conversation
+!.gitkeep
+
+# Temporary ignores
+.old_config
