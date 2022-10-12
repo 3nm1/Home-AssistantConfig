@@ -13,16 +13,13 @@
 
 ## About
 
-This is my personal Home Assistant configuration, running my home automations. Primarily focused on knx and zigbee integrations as of now, will expand in the future
-
+This is my personal Home Assistant configuration, running my home automations. Primarily focused on knx and zigbee integrations as of now, will expand in the future.
 
 Follow me on my journey and be sure to hit the GitHub :star2:
 
 ## Authors & contributors
 
 The original setup of this repository is by [Mikael Engström][3nm1].
-
-.
 
 ## License
 
