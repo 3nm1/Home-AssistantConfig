@@ -1,0 +1,10 @@
+---
+alias: "Telegram bot turn on lamp"
+trigger:
+  platform: event
+  event_type: telegram_command
+  event_data:
+    command: "/lamp-on"
+action:
+  service: light.turn_on
+  entity_id: light.treelamp
