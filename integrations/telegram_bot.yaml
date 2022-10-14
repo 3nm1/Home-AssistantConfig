@@ -15,8 +15,3 @@ telegram_bot:
     allowed_chat_ids:
       - !secret telegram_group
       - !secret telegram_mikael
-
-notify:
-  - name: tg
-    platform: telegram
-    chat_id: !secret telegram_group
