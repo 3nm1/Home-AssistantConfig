@@ -53,6 +53,6 @@ SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/3nm1/Home-AssistantConfig?style=for-the-badge
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022?style=for-the-badge
 [last-commit-shield]: https://img.shields.io/github/last-commit/3nm1/Home-AssistantConfig?style=for-the-badge
-[stars-shield]: https://img.shields.io/github/stars/3nm1/Home-AssistantConfig?style=for-the-badge
-[forks-shield]: https://img.shields.io/github/forks/3nm1/Home-AssistantConfig?style=for-the-badge
-[watchers-shield]: https://img.shields.io/github/watchers/3nm1/Home-AssistantConfig?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/3nm1/Home-AssistantConfig?style=social
+[forks-shield]: https://img.shields.io/github/forks/3nm1/Home-AssistantConfig?style=social
+[watchers-shield]: https://img.shields.io/github/watchers/3nm1/Home-AssistantConfig?style=social
