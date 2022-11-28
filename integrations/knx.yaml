@@ -4,12 +4,13 @@ knx:
       name: "Kontor takbelysning"
       address: "1/1/0"
       state_address: "1/1/3"
-    - # Kontor styrt vägguttag
-      name: "Kontor vägguttag"
-      address: "0/1/1"
-      state_address: "0/1/1"
   sensor:
     - name: "Utetemperatur"
       state_address: "0/2/0"
       sync_state: every 60
       type: temperature
+  switch:
+    - # Kontor styrt vägguttag
+      name: "Kontor vägguttag"
+      address: "0/1/1"
+      state_address: "0/1/1"
