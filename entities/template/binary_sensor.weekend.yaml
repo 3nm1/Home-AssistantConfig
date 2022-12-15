@@ -3,7 +3,7 @@
 # Small binary sensor to tell me if it is currently weekend or not.
 #
 binary_sensor:
-  - name: "Weekend"
+  - name: "Helg"
     unique_id: "910ddeb9-e2a6-4227-bed0-40859817e55d"
     icon: "mdi:calendar-weekend"
     state: >-

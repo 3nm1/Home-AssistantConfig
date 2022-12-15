@@ -14,6 +14,7 @@ __pycache__
 .google.token
 .ssh
 deps
+scripts
 
 # Specific file ignores
 core

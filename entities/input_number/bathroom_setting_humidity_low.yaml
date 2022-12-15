@@ -4,7 +4,7 @@
 # This is an automation control/setting to indicate when
 # the humidity in the bathroom is low.
 #
-name: "Bathroom Setting Humidity Low"
+name: "Badrum gränsvärde låg fuktighet"
 icon: "mdi:water-percent"
 unit_of_measurement: "%"
 min: 0

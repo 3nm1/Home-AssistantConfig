@@ -5,7 +5,7 @@
 # bed in the middle of the night, just enough light to see.
 #
 id: "73a7d53a-1a58-4117-a841-804e58f521ba"
-name: "Hall: Sleep"
+name: "Hall: Sömn"
 icon: mdi:sleep
 entities:
   light.hall_ceiling:

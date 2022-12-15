@@ -5,7 +5,7 @@
 # a bit of light from the outside, so dim light won't do much.
 #
 id: "763a7ac0-0068-499e-bcc9-d6ce3d9df39e"
-name: "Hall: Sunset"
+name: "Hall: Solnedgång"
 icon: mdi:weather-sunset-down
 entities:
   light.hall_ceiling:

@@ -6,7 +6,7 @@
 #
 # At this time, some things will "reset" for the next brand new day
 #
-name: "House Setting Reset"
+name: "Återställ husinställningar"
 icon: "mdi:restart"
 has_time: true
 has_date: false

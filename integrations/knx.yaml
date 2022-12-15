@@ -1,11 +1,37 @@
 knx:
+  # *** Belysning ***
   light:
     - # Kontor takbelysning av/på
       name: "Kontor takbelysning"
       address: "1/1/0"
       state_address: "1/1/3"
+    - # Bibliotek takbelysning av/på
+      name: "Bibliotek takbelysning"
+      address: "1/1/0"
+      state_address: "1/1/3"
+    - # Vardagsrum takbelysning av/på
+      name: "Vardagsrum takbelysning"
+      address: "1/1/0"
+      state_address: "1/1/3"
+    - # Sovrum takbelysning av/på
+      name: "Sovrum takbelysning"
+      address: "1/1/0"
+      state_address: "1/1/3"
+    - # Kök belysning matbord av/på
+      name: "Kök belysning matbord"
+      address: "1/1/0"
+      state_address: "1/1/3"
+  # *** Givare ***
   sensor:
     - name: "Utetemperatur"
+      state_address: "0/2/0"
+      sync_state: every 60
+      type: temperature
+    - name: "Innetemperatur entre"
+      state_address: "0/2/0"
+      sync_state: every 60
+      type: temperature
+    - name: "Innetemperatur salen"
       state_address: "0/2/0"
       sync_state: every 60
       type: temperature

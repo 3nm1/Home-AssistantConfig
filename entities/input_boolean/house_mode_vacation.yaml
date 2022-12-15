@@ -4,5 +4,5 @@
 # This boolean indicates if we are out for multiple days, e.g., on a holiday.
 # Helpful for disabling automations, saving energy and more of those things.
 #
-name: "House Vacation Mode"
+name: "Hus i semesterläge"
 icon: "mdi:beach"

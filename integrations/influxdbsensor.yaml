@@ -1,0 +1,14 @@
+#Sensors
+sensor:
+  platform: influxdb
+  host: localhost
+  username: homeassistant
+  password: !secret influxdb_pass
+  queries:
+    - name: Senaste dygnets temperaturer
+      unit_of_measurement: °C
+      value_template: '{{ value | round(1) }}'
+      where: '"entity_id" = ''utetemperatur'' and time > now() -24h'
+      measurement: '"°C"'
+      field: value
+      database: db_homeassistant

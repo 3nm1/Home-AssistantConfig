@@ -1,0 +1,38 @@
+influxdb:
+  host: 192.168.80.35
+  port: 8086
+  database: db_homeassistant
+  username: homeassistant
+  password: !secret influxdb_pass
+  ssl: true
+  verify_ssl: true
+  max_retries: 3
+  default_measurement: state
+  exclude: 
+    #Exclude entities
+    entities:
+      - sensor.mikaels_iphone_battery_level
+    #Exclude domains
+    domains:
+      - light
+      - binary_sensor
+      - automation
+      - input_boolean
+      - input_datetime
+      - input_number
+      - media_player
+      - number
+      - person
+      - scene
+      - switch
+      - update
+      - weather
+      - zone
+      - sensor
+
+  include: #Include entities
+    entities:
+      - sensor.utetemperatur
+  tags:
+    instance: prod
+    source: hass

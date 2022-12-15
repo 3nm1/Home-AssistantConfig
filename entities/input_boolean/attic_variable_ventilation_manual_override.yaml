@@ -8,5 +8,5 @@
 # been manually overriden by an user. If so, it will stop interfering with
 # the ventilation system automatically.
 #
-name: "Attic Variable Ventilation Manual Override"
+name: "Vindvariabel Manuell tvångskörning"
 icon: "mdi:account-alert"

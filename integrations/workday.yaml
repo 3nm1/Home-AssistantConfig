@@ -8,7 +8,7 @@
 #
 binary_sensor:
   - platform: workday
-    name: holiday
+    name: helgdag
     country: SE
     workdays:
       - holiday

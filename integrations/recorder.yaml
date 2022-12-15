@@ -7,10 +7,29 @@
 recorder:
   # Use the Core MariaDB add-on to store the recorder data in
   # e.g.: "mysql://homeassistant:PASSWORD@core-mariadb/homeassistant?charset=utf8"
-  # db_url: !secret recorder_db_url
+  db_url: !secret mariadb_url
 
   # The number of days of history to keep in the recorder database
   purge_keep_days: 3
 
   # Disable auto purging, I'm doing this using automations instead
   auto_purge: false
+
+  # Includes and excludes
+  include: #Include domain
+    domains:
+      - sensor
+      - switch
+      - media_player
+  exclude: #Exclude entities
+    domains:
+      - automation
+      - updater
+    entity_globs:
+      - sensor.weather_*
+    entities:
+      - sun.sun # Don't record sun data
+      - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+      - sensor.date
+    event_types:
+      - call_service # Don't record service calls

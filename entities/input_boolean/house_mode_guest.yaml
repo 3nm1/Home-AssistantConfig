@@ -3,8 +3,8 @@
 #
 # This boolean indicates if we have guests in the house or not.
 # It allows for small adjustments to the behavior of things like automations
-# to kee our guests comfortable (as they are mostly not used to having
+# to keep our guests comfortable (as they are mostly not used to having
 # everything automated).
 #
-name: "House Guest Mode"
+name: "Hus i gästläge"
 icon: "mdi:account-multiple-plus"

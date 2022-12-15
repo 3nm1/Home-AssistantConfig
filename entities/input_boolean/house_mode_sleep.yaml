@@ -11,5 +11,5 @@
 # Also, if we change the way to detect this, got a new alarm system, or would
 # want to control this manually for once, this makes that possible.
 #
-name: "House Sleep Mode"
+name: "Hus i sömnläge"
 icon: "mdi:sleep"
