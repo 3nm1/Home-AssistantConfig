@@ -1,41 +1,13 @@
-- id: '1670237422482'
-  alias: Taggen Första_test är skannad
-  description: ''
-  trigger:
-  - platform: tag
-    tag_id: 2ea3952c-5e8a-4365-8b92-0dd44085b00a
-  condition: []
-  action:
-  - type: toggle
-    device_id: 7cea93478903b8368172ad729b855589
-    entity_id: switch.uttag_2
-    domain: switch
-  mode: single
-- id: '1671042570290'
-  alias: Tänd ljusstake
-  description: ''
-  trigger:
-  - platform: sun
-    event: sunset
-    offset: 0
-  condition: []
-  action:
-  - type: turn_on
-    device_id: 5d033409a6b4e768dde217e74466c186
-    entity_id: switch.uttag_1
-    domain: switch
-  mode: single
-- id: '1671042649671'
-  alias: Släck ljusstake
-  description: ''
-  trigger:
-  - platform: sun
-    event: sunrise
-    offset: 0
-  condition: []
-  action:
-  - type: turn_off
-    device_id: 5d033409a6b4e768dde217e74466c186
-    entity_id: switch.uttag_1
-    domain: switch
-  mode: single
+---
+# This file is used by the automations editor
+# in the Home Assistant frontend.
+#
+# I personally do not use it, mainly because I like doing this in YAML.
+# However, from time to time, it is helpful to click a bit and see
+# what the frontend makes of it.
+#
+# This file must exist for the frontend Automation editor to work.
+# Hence, it is here, empty.
+#
+# If you are looking for my automations: See automations folder.
+[]

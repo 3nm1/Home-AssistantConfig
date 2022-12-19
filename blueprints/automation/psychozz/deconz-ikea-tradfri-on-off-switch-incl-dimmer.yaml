@@ -1,0 +1,91 @@
+blueprint:
+  name: deCONZ - IKEA Tradfri on/off switch
+  description: '"Control your deCONZ light(s) with IKEA Tradfri on/off switch
+
+
+    Select the Tradfri remote and your lights.
+
+    You can turn the lights On / Off, or hold the buttons to dim the lights"
+
+    '
+  domain: automation
+  input:
+    remote:
+      name: Remote
+      description: The remote that will control the lights
+      selector:
+        device:
+          integration: deconz
+          manufacturer: IKEA of Sweden
+          model: TRADFRI on/off switch
+          multiple: false
+    light:
+      name: Light
+      description: The lights that will be controlled
+      selector:
+        target:
+          entity:
+            domain: light
+  source_url: https://community.home-assistant.io/t/deconz-ikea-tradfri-on-off-switch-incl-dimmer/260772
+mode: restart
+trigger:
+  - platform: event
+    event_type: deconz_event
+    event_data:
+      device_id: !input remote
+action:
+  - variables:
+      event: "{{ trigger.event.data.event }}"
+  - choose:
+      - conditions:
+          - "{{ event == 1002 }}"
+        sequence:
+          - service: light.turn_on
+            target: !input light
+            data:
+              transition: 1
+      - conditions:
+          - "{{ event == 2002 }}"
+        sequence:
+          - service: light.turn_off
+            target: !input light
+            data:
+              transition: 1
+      - conditions:
+          - "{{ event == 1001 }}"
+        sequence:
+          repeat:
+            while:
+              - condition: template
+                value_template: "{{ repeat.index < 10 }}"
+            sequence:
+              - service: light.turn_on
+                target: !input light
+                data:
+                  transition: 1
+                  brightness_step_pct: 30
+              - delay: 1
+      - conditions:
+          - "{{ event == 2001 }}"
+        sequence:
+          repeat:
+            while:
+              - condition: template
+                value_template: "{{ repeat.index < 10 }}"
+            sequence:
+              - service: light.turn_on
+                target: !input light
+                data:
+                  transition: 1
+                  brightness_step_pct: -30
+              - delay: 1
+      - conditions:
+          - "{{ event == 1003 }}"
+        sequence:
+          - service: light.turn_on
+            target: !input light
+      - conditions:
+          - "{{ event == 2003 }}"
+        sequence:
+          - service: light.turn_off
+            target: !input light

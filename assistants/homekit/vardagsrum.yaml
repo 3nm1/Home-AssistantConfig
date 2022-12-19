@@ -1,0 +1,12 @@
+---
+#
+# List of entities that is exposed to HomeKit/Siri
+# Area: Vardagsrum
+#
+# entities:
+- light.bokhylla_1
+- light.bokhylla_2
+- light.dimmable_light_6
+- binary_sensor.fire_6
+- number.vardagsrum_bass
+- number.vardagsrum_treble

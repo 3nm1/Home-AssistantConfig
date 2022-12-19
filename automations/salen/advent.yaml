@@ -1,0 +1,15 @@
+---
+alias: Tänd ljusstake
+description: ""
+id: "1671042570290"
+trigger:
+  - platform: sun
+    event: sunset
+    offset: 0
+condition: []
+action:
+  - type: turn_on
+    device_id: 5d033409a6b4e768dde217e74466c186
+    entity_id: switch.uttag_1
+    domain: switch
+mode: single
