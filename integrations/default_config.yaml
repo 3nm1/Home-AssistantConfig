@@ -8,6 +8,6 @@
 # default.
 #
 # For example: history, frontend, cloud, logbook, map, my, script, sun,
-# zeroconf, person, scene, system_healt, and a lot more.
+# zeroconf, person, scene, system_health, and a lot more.
 #
 default_config: ~
