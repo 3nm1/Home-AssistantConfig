@@ -1,12 +1,22 @@
-- alias: "Tänd/Släck ljusstake"
-  id: "dae7c422-03ff-4ae6-a06d-65e4907880e1"
-  trigger:
-    - platform: sun
-      event: sunset
-      offset: "+00:15:00"
-    - platform: sun
-      event: sunrise
-      offset: "+00:15:00"
-  action:
-    - service: "switch.turn_{{'on' if trigger.event == 'sunset' else 'off'}}"
-      entity_id: switch.uttag_1
+alias: Advent ljusstakar av/på vid soluppgång/solnedgång
+mode: single
+trigger:
+  - platform: sun
+    event: sunrise
+  - platform: sun
+    event: sunset
+condition: []
+action:
+  - if:
+      - condition: template
+        value_template: '{{ trigger.event == "sunrise" }}'
+    then:
+      - type: turn_off
+        device_id: 5d033409a6b4e768dde217e74466c186
+        entity_id: switch.uttag_1
+        domain: switch
+    else:
+      - type: turn_on
+        device_id: 5d033409a6b4e768dde217e74466c186
+        entity_id: switch.uttag_1
+        domain: switch

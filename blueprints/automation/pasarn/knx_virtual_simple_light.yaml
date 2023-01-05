@@ -1,0 +1,74 @@
+blueprint:
+  name: Virtual KNX Device - Simple Light
+  description: Vitual KNX Device that represant in simple light
+  domain: automation
+  input:
+    address:
+      name: Address
+      description: KNX group address for switching the light on and off. DPT 1.001
+    state_address:
+      name: State Address
+      description: KNX group address for exposing the switch state of the light. DPT
+        1.001
+    target_light:
+      name: Light
+      description: The light to keep in sync.
+      selector:
+        entity:
+          domain: light
+          multiple: false
+  source_url: https://gist.github.com/pasarn/ecd9e7d217a4da9ea210c5eab326a0cd
+variables:
+  address: !input address
+trigger:
+- platform: homeassistant
+  event: start
+- platform: event
+  event_type: automation_reloaded
+- platform: event
+  event_type: knx_event
+  event_data:
+    destination: !input address
+action:
+- choose:
+  - conditions:
+    - condition: template
+      value_template: '{{ trigger is defined and trigger.platform == "event" and trigger.event.event_type
+        == "knx_event" }}'
+    sequence:
+    - choose:
+      - conditions:
+        - condition: template
+          value_template: '{{ trigger.event.data.destination == address and trigger.event.data.data
+            == 1 }}'
+        sequence:
+        - service: light.turn_on
+          data:
+            entity_id: !input target_light
+      - conditions:
+        - condition: template
+          value_template: '{{ trigger.event.data.destination == address and trigger.event.data.data
+            == 0 }}'
+        sequence:
+        - service: light.turn_off
+          data:
+            entity_id: !input target_light
+  - conditions:
+      condition: or
+      conditions:
+      - condition: template
+        value_template: '{{ trigger is not defined }}'
+      - condition: template
+        value_template: '{{ trigger.platform == "homeassistant" }}'
+      - condition: template
+        value_template: '{{ trigger.platform == "event" and trigger.event.event_type
+          == "automation_reloaded" }}'
+    sequence:
+    - service: knx.event_register
+      data:
+        address: '{{ address }}'
+    - service: knx.exposure_register
+      data:
+        address: !input state_address
+        type: binary
+        entity_id: !input target_light
