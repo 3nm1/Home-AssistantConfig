@@ -1,0 +1,14 @@
+- id: "1672923477165"
+  alias: Batterikontroll
+  description: Kontrollerar_batteridriven utrustning
+  use_blueprint:
+    path: sbyx/low-battery-level-detection-notification-for-all-battery-sensors.yaml
+    input:
+      exclude:
+        entity_id:
+          - sensor.mikaels_iphone_battery_level
+      actions:
+        - service: script.mediaplayer_vardagsrum
+          data:
+            entity_id: media_player.vardagsrum
+            message: "Batterinivå låg sensor: {{sensors}}"
